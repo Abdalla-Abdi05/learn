@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+padding: 0;
+font-family: Century Gethic;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(consultancy.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+
+ul{
+    float: right;
+    list-style-type:none;
+     margin-top: 25px
+}
+
+ul li{
+    display: inline-block;
+}
+{
+  
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: green;
+    color: #000;
+}
+
+ul li.active a{
+     background-color: #fff;
+    color: #000;
+}
+ul li{
+    float: left;
+    width: 200px
+    height: 40px
+    background-color: black;
+    text-align: center;
+    font-size: 20px
+}
+
+
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-43%,-45%);
+}
+
+.title h1{
+    color: #fff;
+    font-size: 60px;
+}
+
+.button{
+   position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+.Submenu{
+     display: none;
+
+}
+ul li:hover .Submenu{
+    display: block;
+    position: absolute;
+}
+
+table{
+    width: 80%
+}
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    justify-content: center;
+    justify-items: bottom;
+}
+th, td {
+    padding: 10px
+}
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+body{
+    height: 100vh;
+    display:contents;
+    justify-content: center;
+    justify-items: center;
+}
+#aboutus h2{ margin-top: 25px;}
+.image{ width: 100%}
+.image img{width: 100%; padding: 10px; border-radius: 50%; box-shadow: 0 0 10px #999999}
+
+#our h2{ margin-top: 25px;}
+.image{ width: 100%}
+.image img{width: 50%; padding: 10px; border-radius: 50%; box-shadow: 0 0 10px #999999}
+.our{margin-top: 30px;}
+
+#our .col {margin-top: 30px;}
+.contact { margin-top: 30px;}
+
+@media print {
+    .screen-only {
+        display: none;}
+    @@media( max-width:599px)
+      {
+        #aboutus h2{
+          margin-top: 25px;
+          margin-left: 10px;
+        }
+      #aboutus p.table-info{
+        font-size: 12px;
+      }
+      #aboutus p.table-warning{
+        font-size: 12px;
+
+      }
+      #aboutus p.table-danger{
+        font-size: 12px;
+      }
+      }
